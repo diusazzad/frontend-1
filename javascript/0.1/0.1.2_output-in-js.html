@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Output in JS</title>
+</head>
+
+<body>
+
+  <!-- Output in JavaScript
+
+JavaScript provides various ways to produce output or display information. Two common methods are using console.log()
+ for debugging and writing to the HTML document to interact with the user. Below are examples of both methods -->
+
+
+
+  <!-- Using console.log():
+
+The console.log() method is primarily used for debugging purposes.
+ It allows you to print messages or variable values to the browser's console,
+  which can be accessed via developer tools. -->
+  <script>
+    // Display a message in the console
+    console.log("Hello, World!");
+
+    // Display the value of a variable
+    let number = 42;
+    console.log("The answer is: " + number);
+
+  </script>
+
+  <!-- 
+Writing to the HTML Document:
+
+To display information directly to the user on a web page, you can write content to the HTML document using JavaScript. You typically target an HTML element where you want to insert content.
+
+Here's an example of writing to an HTML element with the innerHTML property: -->
+  <p id="output"></p>
+
+  <script>
+    // Find the HTML element with the id "output"
+    let outputElement = document.getElementById("output");
+
+    // Write content to the element
+    outputElement.innerHTML = "Hello, World!";
+  </script>
+
+</body>
+
+</html>
